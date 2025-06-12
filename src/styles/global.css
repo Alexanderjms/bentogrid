@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.dm-sans-semibold {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 480;
+}
+
+.tracking-tightest {
+  letter-spacing: -0.08em;
+}

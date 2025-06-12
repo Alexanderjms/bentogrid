@@ -1,11 +1,42 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/card.astro'
 ---
-
 <Layout>
-	<Welcome />
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-36 auto-rows-[minmax(150px,_auto)]">
+    <Card bgColor="bg-[#faeee2]" colSpan="lg:col-span-1" rowSpan="row-span-2">
+      <h2 class="dm-sans-semibold text-3xl text-center tracking-tightest mt-2">
+        Create and<br>schedule<br>content<br><span class="italic text-purple-600">quicker</span>.
+      </h2>
+      <img
+        src="/illustration-create-post.webp"
+        alt="create post"
+        class="mt-6 transition-transform duration-300 ease-in-out hover:scale-105"
+      >
+    </Card>
+
+    <Card bgColor="bg-[#7651dc]" colSpan="lg:col-span-2" rowSpan="row-span-1">
+      <h2 class="dm-sans-semibold text-white text-3xl text-center mt-2" >
+        Social Media<span class="text-yellow-300"> 10x</span><br><span class="italic">Faster </span>With AI
+      </h2>
+      <img
+        src="/illustration-create-post.webp"
+        alt="create post"
+        class="mt-6 transition-transform duration-300 ease-in-out hover:scale-105"
+      >
+    </Card>
+
+   <Card bgColor="bg-[#dcd1fc]" colSpan="lg:col-span-1" rowSpan="row-span-2">
+      <h2 class="dm-sans-semibold text-3xl text-center tracking-tightest mt-2">
+        Create and<br>schedule<br>content<br><span class="italic text-purple-600">quicker</span>.
+      </h2>
+      <img
+        src="/illustration-create-post.webp"
+        alt="create post"
+        class="mt-6 transition-transform duration-300 ease-in-out hover:scale-105"
+      >
+    </Card>
+
+  </div>
+
 </Layout>

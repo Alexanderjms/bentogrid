@@ -1,0 +1,14 @@
+---
+const { 
+  bgColor = "bg-white", 
+  colSpan = "col-span-1", 
+  rowSpan = "row-span-1", 
+  className = "" } = Astro.props;
+---
+<div class={`p-6 rounded-xl shadow-md 
+${bgColor} 
+${colSpan} 
+${rowSpan} 
+${className}`}>
+  <slot />
+</div>
