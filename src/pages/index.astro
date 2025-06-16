@@ -2,10 +2,11 @@
 import Layout from '../layouts/Layout.astro'
 import Card from '../components/card.astro'
 ---
+
 <Layout>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-36 auto-rows-[minmax(150px,_auto)]">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:px-12 md:px-24 lg:px-36 auto-rows-[minmax(150px,_auto)]">
     <Card bgColor="bg-[#faeee2]" colSpan="lg:col-span-1" rowSpan="row-span-2">
-      <h2 class="dm-sans-semibold text-3xl text-center tracking-tightest mt-2">
+      <h2 class="dm-sans-semibold text-4xl text-center tracking-tightest mt-16">
         Create and<br>schedule<br>content<br><span class="italic text-purple-600">quicker</span>.
       </h2>
       <img
@@ -15,28 +16,89 @@ import Card from '../components/card.astro'
       >
     </Card>
 
-    <Card bgColor="bg-[#7651dc]" colSpan="lg:col-span-2" rowSpan="row-span-1">
+    <Card bgColor="bg-[#7651dc]" colSpan="sm:col-span-2 md:col-span-2 lg:col-span-2" rowSpan="row-span-1" className="py-12">
       <h2 class="dm-sans-semibold text-white text-3xl text-center mt-2" >
         Social Media<span class="text-yellow-300"> 10x</span><br><span class="italic">Faster </span>With AI
       </h2>
       <img
-        src="/illustration-create-post.webp"
+        src="/illustration-five-stars.webp"
         alt="create post"
-        class="mt-6 transition-transform duration-300 ease-in-out hover:scale-105"
+        class="mt-2 w-32 h-26 mx-auto transition-transform duration-300 ease-in-out hover:scale-105"
       >
+      <h2 class="dm-sans-semibold text-white text-sm text-center mt-2">
+        Over 4,000 5-star reviews
+      </h2>
     </Card>
 
-   <Card bgColor="bg-[#dcd1fc]" colSpan="lg:col-span-1" rowSpan="row-span-2">
-      <h2 class="dm-sans-semibold text-3xl text-center tracking-tightest mt-2">
-        Create and<br>schedule<br>content<br><span class="italic text-purple-600">quicker</span>.
+    <Card bgColor="bg-[#dcd1fc]" colSpan="sm:col-span-1 md:col-span-1 lg:col-span-1" rowSpan="row-span-2" className="overflow-hidden py-24">
+      <h2 class="dm-sans-semibold text-3xl text-start tracking-tightest mt-2">
+        Schedule to<br>social media.
       </h2>
       <img
-        src="/illustration-create-post.webp"
+        src="/illustration-schedule-posts.webp"
+        alt="create post"
+        class="mt-2 ml-28 transition-transform duration-300 ease-in-out hover:scale-105"
+      >
+      <h2 class="dm-sans-semibold text-black text-sm text-start mt-2">
+        Optimize post timings to publish content at the perfect time for your audience.
+      </h2>
+    </Card>
+
+    <Card bgColor="bg-white" colSpan="sm:col-span-1 md:col-span-1 lg:col-span-1" rowSpan="row-span-2" className="mt-0">
+      <img
+        src="/illustration-multiple-platforms.webp"
+        alt="create post"
+        class="mt-6 transition-transform duration-300 ease-in-out hover:scale-105"
+      >
+      <h2 class="dm-sans-semibold text-3xl text-start tracking-tightest mt-2">
+        Manage<br>multiple<br>accounts and<br>platforms.
+      </h2>
+      <h2 class="dm-sans-semibold text-6xl text-start mt-6">
+        >56%
+      </h2>
+      <h2 class="dm-sans text-medium text-start mt-6">
+        faster audience growth
+      </h2>
+      <img
+        src="/illustration-audience-growth.webp"
+        alt="create post"
+        class="mt-6 ml-10 w-auto h-16 transition-transform duration-300 ease-in-out hover:scale-105"
+      >
+    </Card>
+
+    <Card bgColor="bg-[#ffcc69]" colSpan="sm:col-span-1 md:col-span-1 lg:col-span-1" rowSpan="row-span-2" className="h-2/5 overflow-hidden">
+      <h2 class="dm-sans-semibold text-3xl text-start tracking-tightest mt-0">
+        Maintain a<br>consistent<br>posting schedule.
+      </h2>
+      <img
+        src="/illustration-consistent-schedule.webp"
+        alt="create post"
+        class="mt-2 transition-transform duration-300 ease-in-out hover:scale-105"
+      >
+    </Card>
+
+    <Card bgColor="bg-[#ffcc69]" colSpan="sm:col-span-1 md:col-span-1 lg:col-span-1" rowSpan="row-span-1" className="px-12">
+      <h2 class="dm-sans-semibold text-4xl text-start tracking-tightest mt-2">
+        Write your<br>content<br>using AI.
+      </h2>
+      <img
+        src="/illustration-ai-content.webp"
         alt="create post"
         class="mt-6 transition-transform duration-300 ease-in-out hover:scale-105"
       >
     </Card>
 
+    <Card bgColor="bg-[#7651dc]" colSpan="sm:col-span-1 md:col-span-1 lg:col-span-1" rowSpan="row-span-1" className="text-white">
+      <div class="flex items-center">
+        <img
+          src="/illustration-ai-content.webp"
+          alt="create post"
+          class="w-auto h-36 transition-transform duration-300 ease-in-out hover:scale-105"
+        >
+        <h2 class="dm-sans-semibold text-2xl text-start ml-4">
+          Grow flowers<br>with non-stop<br>
+        </h2>
+      </div>
+    </Card>
   </div>
-
 </Layout>
